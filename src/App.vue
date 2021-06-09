@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header title="PROJECT: Tic-Tac-Toe" />
+    <GameBoard />
+    <TextPanel />
+    <ControlPanel />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header"
+import GameBoard from "./components/GameBoard"
+import TextPanel from "./components/TextPanel"
+import ControlPanel from "./components/ControlPanel"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    GameBoard,
+    TextPanel,
+    ControlPanel
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+      font-family: 'Courier New', Courier, monospace;
+  }
 </style>
