@@ -1,5 +1,5 @@
 <template>
-  <div :id="id" class="btn"></div>
+  <div :id="id" class="btn" @click="tileClicked">{{ content }}</div>
 </template>
 
 <script>
@@ -7,6 +7,14 @@ export default {
   name: "Tile",
   props: {
     id: Number,
+    content: String,
+  },
+  methods: {
+    tileClicked() {
+      if (this.content === "") {
+        this.$emit("tileClicked", this.id);
+      }
+    },
   },
 };
 </script>

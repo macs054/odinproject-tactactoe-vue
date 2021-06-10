@@ -5,10 +5,8 @@
 <script>
 export default {
   name: "TextPanel",
-  data() {
-    return {
-      content: "Player Turn",
-    };
+  props: {
+    content: String,
   },
 };
 </script>

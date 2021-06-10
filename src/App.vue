@@ -1,31 +1,30 @@
 <template>
   <div id="app">
-    <Header title="PROJECT: Tic-Tac-Toe" />
+    <Header :title="title" />
     <GameBoard />
-    <TextPanel />
-    <ControlPanel />
   </div>
 </template>
 
 <script>
-import Header from "./components/Header"
-import GameBoard from "./components/GameBoard"
-import TextPanel from "./components/TextPanel"
-import ControlPanel from "./components/ControlPanel"
+import Header from "./components/Header";
+import GameBoard from "./components/GameBoard";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     GameBoard,
-    TextPanel,
-    ControlPanel
-  }
-}
+  },
+  data() {
+    return {
+      title: "PROJECT: Tic-Tac-Toe",
+    };
+  },
+};
 </script>
 
 <style>
-  body {
-      font-family: 'Courier New', Courier, monospace;
-  }
+body {
+  font-family: "Courier New", Courier, monospace;
+}
 </style>
