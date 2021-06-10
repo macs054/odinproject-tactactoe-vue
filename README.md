@@ -1,4 +1,5 @@
-# odinproject-tictactoe-vue
+# Odin Project - Tic Tac Toe Assignment (Vue)
+Vue version of the [Vanilla JS Tic-Tac-Toe](https://github.com/macs054/odinproject-tictactoe) project. 
 
 ## Project setup
 ```
