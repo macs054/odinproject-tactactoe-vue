@@ -1,5 +1,6 @@
 # Odin Project - Tic Tac Toe Assignment (Vue)
-Vue version of the [Vanilla JS Tic-Tac-Toe](https://github.com/macs054/odinproject-tictactoe) project. 
+Vue version of the [Vanilla JS Tic-Tac-Toe](https://github.com/macs054/odinproject-tictactoe) project.
+- [Live Demo (Heroku)](https://protected-escarpment-20461.herokuapp.com/)
 
 ## Project setup
 ```
